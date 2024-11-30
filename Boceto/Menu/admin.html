@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Tacos Pulpachos</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>Panel de Administración</h1>
+    <section class="admin-form">
+        <h2>Agregar Producto</h2>
+        <input type="text" id="productoNombre" placeholder="Nombre del producto">
+        <input type="number" id="productoPrecio" placeholder="Precio del producto">
+        <input type="file" id="productoImagen" accept="image/*">
+        <button onclick="agregarProducto()">Agregar Producto</button>
+        <p id="adminMessage" style="color: green;"></p>
+    </section>
+    <section id="productosAdmin" class="productos">
+        <!-- Lista de productos generada dinámicamente -->
+    </section>
+    <button onclick="cerrarSesion()">Cerrar Sesión</button>
+    <script src="admin.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

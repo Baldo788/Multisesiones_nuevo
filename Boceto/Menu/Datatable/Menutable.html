@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Tacos</title>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="Menu2.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="container">
+        
+        <h1>Tacos Pulpachos</h1>
+        <h2>Menú de Tacos</h2>
+        
+        
+        <table id="tacosTable" class="display">
+            <thead>
+                <tr>
+                    <th>Nombre del Taco</th>
+                    <th>Precio</th>
+                    <th>Tiempo de Preparación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Taco de Pastor</td>
+                    <td>$15 c/u</td>
+                    <td>10 minutos</td>
+                </tr>
+                <tr>
+                    <td>Taco de Barbacoa</td>
+                    <td>$20 c/u</td>
+                    <td>15 minutos</td>
+                </tr>
+                <tr>
+                    <td>Taco de Carnitas</td>
+                    <td>$18 c/u</td>
+                    <td>12 minutos</td>
+                </tr>
+                <tr>
+                    <td>Taco de Pescado</td>
+                    <td>$25 c/u</td>
+                    <td>8 minutos</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+        <div class="btn-container">
+            <button class="btn" onclick="window.location.href='Menu.html'">Volver</button>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#tacosTable').DataTable({
+                paging: true,  
+                searching: true,
+            });
+        });
+    </script>
+</body>
+</html>
+

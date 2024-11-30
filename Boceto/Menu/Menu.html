@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos Pulpachos (Menú)</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+
+    <section class="buscador">
+        <h2>¿Qué vas a ordenar?</h2>
+        <input type="text" id="searchBar" placeholder="Buscar categoría...">
+        <button id="addCategoryBtn">Agregar categoría</button>
+        <ul id="categoryList">
+        </ul>
+    </section>
+
+    <section class="Menu">
+        <div class="productos">
+           
+            <div class="producto">
+                <img id="Imgtacos" src="img/R.jpeg" alt="Producto 1">
+                <button onclick="comprar('Tacos de barbacoa', 90)">Comprar</button>
+                <button onclick="agregarCarrito('Tacos de barbacoa', 90)">Agregar al Carrito</button>
+            </div>
+
+           
+            <div class="producto">
+                <img src="img/P7170686.jpg" alt="Producto 2">
+                <button onclick="comprar('Tacos de pastor', 80)">Comprar</button>
+                <button onclick="agregarCarrito('Tacos de pastor', 80)">Agregar al Carrito</button>
+            </div>
+
+           
+            <div class="producto">
+                <img src="img/Homemade-Chicken-Fajitas-760x1140.jpg" alt="Producto 3">
+                <button onclick="comprar('Tacos de chicharon', 80)">Comprar</button>
+                <button onclick="agregarCarrito('Tacos de chicharon', 80)">Agregar al Carrito</button>
+            </div>
+
+            
+            <div class="producto">
+                <img src="img/blackstone-chicken-tacos.png" alt="Producto 4">
+                <button onclick="comprar('Tacos de asado', 90)">Comprar</button>
+                <button onclick="agregarCarrito('Tacos de asado', 90)">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="datatable-section">
+        <button id="btn-datatable" onclick="window.location.href='DataTable/Menutabñe.html'">Ver Tabla de Tacos</button>
+    </section>
+
+    <section>
+        <button id="btn-carrito" onclick="irCarrito()">Ir al Carrito</button>
+    </section>
+
+    <script src="auth.js"></script>
+    <script src="Menu.js"></script>
+    <script src="eventos.js"></script>
+    <script src="Customevent.js"></script>
+    <div class="nav-button">
+        <button id="toggleNav">Subir/Desplegar Navegación</button>
+    </div>
+</div>
+</body>
+</html>
+
